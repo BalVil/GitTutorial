@@ -18,17 +18,18 @@
 16. git merge "banchName" - зливаємо гілку з назвою "branchName" в поточну гілку
 17. git merge --abort - відміняємо зливання гілок
 18. git branch -d <branchName> - видаляє гілку локально з проєкту
-19. git push origin --delete name - видаляє гілку з сайту github
+19. git push origin --delete <branchName> - видаляє гілку з сайту github
 20. git diff - показує відрізки рядків між двома версіями файлу (між двома комітами)
 21. git log - показує історію комітів
-22. cd gitTutorial - переходимо в папку gitTutorial
-23. git push --set-upstream origin header або git push origin <branchName> - створюємо поточну гілку на github, зв'язуємо її з локальною та відправляємо зміни (якщо на github ще не має поточної гілки).
+22. git push --set-upstream origin <branchName> або git push origin <branchName> - створюємо поточну гілку на github, зв'язуємо її з локальною та відправляємо зміни (якщо на github ще не має поточної гілки).
 
 - Різниця між ними коли робитимемо git pull:
 
-- після git push --set-upstream origin header треба
+- після git push --set-upstream origin <branchName> треба
   git pull
 - а після git push origin <branch> треба
   git pull origin <branch>
 
-Для того щоб вийти з режиму перегляду комітів використовуйте клавішу q
+23. cd gitTutorial - переходимо в папку gitTutorial
+
+- Для того щоб вийти з режиму перегляду комітів використовуйте клавішу q
